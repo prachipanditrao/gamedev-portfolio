@@ -1,33 +1,4 @@
 import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
-
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
-import {
   About,
   ContactSection,
   ContactType,
@@ -39,13 +10,43 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import {
+  AcademicCapIcon,
+  ArrowDownTrayIcon,
+  BuildingOffice2Icon,
+  CalendarIcon,
+  FlagIcon,
+  MapIcon,
+  SparklesIcon,
+} from '@heroicons/react/24/outline';
+
+import GithubIcon from '../components/Icon/GithubIcon';
+import InstagramIcon from '../components/Icon/InstagramIcon';
+import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroImage from '../images/header-background.webp';
+import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
+import porfolioImage10 from '../images/portfolio/crypto-app.png';
+import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
+import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
+import porfolioImage3 from '../images/portfolio/Wordle.png';
+import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
+import porfolioImage5 from '../images/portfolio/QuizMaster.png';
+import porfolioImage6 from '../images/portfolio/JungleSlots.png';
+import porfolioImage7 from '../images/portfolio/3JS-demo.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage9 from '../images/portfolio/NinjaAdventure.png';
+import profilepic from '../images/profilepicture.png';
+import testimonialImage from '../images/testimonial.webp';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Ketan Shukla Portfolio',
+  description: "site built to showcase my work and experience",
 };
 
 /**
@@ -69,18 +70,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Ketan Shukla.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Pune based <strong className="text-stone-100">Full Stack Game Developer</strong>, currently working
+        at <strong className="text-stone-100">Bombay Play</strong> helping build hyper social, mobile-first,
+        games that you can play with your family and friends.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me training in <strong className="text-stone-100">Gym</strong>,
+        jolting down my thoughts in my <strong className="text-stone-100">poems</strong>, or exploring wilderness of{' '}
+        <strong className="text-stone-100">Majestic Sahyadri Ranges</strong>.
       </p>
     </>
   ),
@@ -104,16 +105,18 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a passionate Software Development Engineer with a strong background in Unity, Cocos game engine, C++ and TypeScript. 
+  My experience includes leading client-side development for games using Unity, collaborating with cross-functional teams, and championing Agile/Scrum practices. 
+  With a focus on creating highly performant web applications, I excel in JavaScript, React.js, Redux, and Redux Saga as well.
+  My commitment to testable and maintainable code, along with a keen eye for detail, ensures top-quality software. 
+  I've also contributed to open source front-end projects and am eager to continue solving complex problems and driving innovation in Unity game development.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'Pune, MH', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Games, Gym, Trekking', Icon: SparklesIcon},
+    {label: 'Study', text: 'CDAC ACTS Pune', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Bombay Play, PVT. LTD.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,19 +125,23 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Game development',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Unity',
+        level: 9,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Cocos Creator',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Phaser',
+        level: 6,
+      },
+      {
+        name: 'Unreal',
+        level: 6,
       },
     ],
   },
@@ -150,8 +157,8 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Angular',
+        level: 7,
       },
     ],
   },
@@ -160,15 +167,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 6,
       },
       {
         name: 'Rust',
-        level: 5,
+        level: 3,
       },
       {
         name: 'Golang',
-        level: 4,
+        level: 3,
       },
     ],
   },
@@ -196,69 +203,74 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ludo All Star',
+    description: `I had the privilege of working a remarkable project while working at Yoozoo games that achieved remarkable success with over 10 million downloads and an outstanding 4.8 rating. This achievement was made possible through the creation of "Ludo All Star," a captivating Parcheesi game offering engaging gameplay for two to four players on a shared board.
+    This project involved a rich blend of technologies, including the CocosCreator Game Engine, Javascript, TypeScript, C++, Python, Android Java, and iOS Xcode ObjectiveC, culminating in a thrilling and globally beloved gaming experience.
+    In this project, I played a pivotal role in client-side development, using JavaScript and TypeScript, and created scripting tools to streamline the development process. Utilizing Python, I generated Android projects and employed regular expressions to craft Android gradle files, manifests, and other project details. Additionally, I wrote custom code in Java and Objective C, leveraging platform-specific features, including ad implementation, analytical events, purchases, achievements, notifications scheduling, and crash fixes. Furthermore, I contributed to enhancing the game engine in C++ and Java, particularly focusing on improvements to the sound manager and touch events.
+    `,
+    url: 'https://ludo-all-star.en.uptodown.com/android',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Four Word: Word Battle',
+    description: `Four Word Battle: The ultimate word challenge! Exercise your brain with this addictive fusion of word games and competition. Free to download, it offers simple, fun gameplay for all ages. Connect letters, guess hidden words, and enjoy endless word fun in a "Best of Three" format. Download now and conquer the word arena!`,
+    url: 'https://apk-dl.com/amp/four-word-word-battle-game/com.fourword.wordcrush.wordgames',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Daily Word Puzzle',
+    description: `Embark on a thrilling journey with DWP where you'll encounter a world of challenges, excitement, and brain-teasing puzzles. Explore a diverse range of levels, each more intriguing than the last, as you work to unravel the mysteries within. Played a important role in development of the game published by Bombay Play`,
+    url: 'https://play.google.com/store/apps/details?id=com.bombayplay.DailyWord&pcampaignid=web_share',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Spot Match: Math Puzzle',
+    description: `This math puzzle game challenges your logic and skills. Find the right numbers to total 10 and conquer the puzzle board. Hours of math-solving fun await, where longer chains mean higher scores. Simple to learn, yet tough to master, it's a brain-teasing, engaging number game. Test your skills and enjoy the challenge.`,
+    url: 'https://play.google.com/store/apps/details?id=com.bombayplay.spot.match.math.puzzle&pcampaignid=web_share',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Quiz Master 2D',
+    description: 'Simple Quiz Game Made With Unity 2021.3.17f. Demonstrates the use of Canvas, Buttons, and TextMeshPro',
+    url: 'https://ketan-shukla.github.io/QuizMaster2D-Build/',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Jungle Slots - Casino Games',
+    description: ` Play casino slots machines with game coin rounds and free spins! Feel the excitement from the top lucky casino games while getting big jackpot win! Exciting bonus coins and progressive JACKPOTS are waiting for you!`,
+    url: 'https://ketan-shukla.github.io/jungleSlotsBuild/',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Virtual Village Babylon',
+    description: `There are 5 buttons on the screen in the bottom part a. Entrance: Will take you to the entrance b. Corner A: Will take you to fountain area c. Corner B: Will take you to the right side d. Corner C: Will take you to the road/ main square e. Corner D: Will take you to the home with a car
+
+    All assets in these corners load dynamically except the houses.`,
+    url: 'https://ketan-shukla.github.io/VirtualVillageBabylon/',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Other Projects',
+    description: 'can check my other projects over here!',
+    url: 'https://github.com/ketan-shukla',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ninja Adventure',
+    description: 'Play Using WASD Keys! Game Show cases 3d terrain with collectable items fully working inventory, Traps and ester eggs',
+    url: 'https://ketan-shukla.github.io/Ninja-Platformer-openworld-puzzle/',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'CJX Crypto Wallet',
+    description: 'React Native crypto wallet to ability add remove crypto currencies and tracking win/loss percentage.',
+    url: 'https://github.com/Ketan-Shukla/crypto-wallet-app',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ski Slope Adventure - A 2D Mobile Skiing Game',
+    description: '"Ski Slope Adventure" is an exhilarating 2D mobile game that transports players to the thrilling world of downhill skiing. With responsive controls and heart-pounding gameplay, this game offers an immersive experience for both casual gamers and skiing enthusiasts. Players must navigate a snow-covered mountain, avoid obstacles, and strive to reach the finish line while enjoying breathtaking winter landscapes.',
+    url: 'https://ketan-shukla.github.io/Snow-ski-surf-build/',
     image: porfolioImage11,
   },
 ];
@@ -268,40 +280,60 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Feb 2019',
+    location: 'CDAC ACTS, Pashan Pune',
+    title: 'PG Diploma Course',
+    content: <p>Rooted in C-DAC's extensive research and development heritage, the course curriculum, teaching materials, and instructional approach draw from the institution's distinguished legacy of designing the PARAM series of supercomputers. As a result, PG-DVLSI offers a comprehensive and industry-relevant education, empowering participants to excel in the field of VLSI design </p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2018',
+    location: 'Sant Gadge Baba Amravati University',
+    title: 'Bachelor of Engineering Electronics and Telecommunication',
+    content: <p> I've gained expertise in DSA, C++, programming languages, semiconductors, and the application of the knowledge in communication and problem-solving. The program instilled innovation, technological understanding, and a commitment to human values. It prepared me for a dynamic tech landscape, encouraging adaptability and creativity for a self-sustaining Digital India. I've honed skills through technology-focused courses, soft skill training, workshops, and insights from industry experts.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2022 - Present',
+    location: 'Bombay Play Pvt Ltd',
+    title: 'Software Development Engineer 2',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div>
+        <ul>- Led game development for Daily Word Puzzle and Spot-Match using Cocos and TypeScript, C++.
+          Actively engaged in peer code reviews.</ul>
+        <ul>- Contributed to the development of a new exciting game DragonTile using Unity and C#.</ul>
+        <ul>- Built SDKs in C++, Java, and TypeScript to streamline cross-project processes.</ul>
+        <ul>- Collaborated with product management and UX teams to ensure the best user experiences.</ul>
+        <ul>- Contributing to the development of a new exciting game BlockHeads using CocosCreator and TypeScript.</ul>
+      </div>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Sept 2019 - March 2022',
+    location: 'Yoozoo Games India',
+    title: 'Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div>
+        <ul>- Worked on the development of FourWords and CricketRivals 3D game using Unity and C#.</ul>
+        <ul>- Contributed to designing and developing multiplayer board games employing C++, Cocos, and JavaScript/Typescript.</ul>
+        <ul>- Built scripting tools and SDKs in C++, and Python to streamline development processes.</ul>
+        <ul>- Development of Dashboards for monitoring and managing analytics data from thousands of players</ul>
+      </div>
+    ),
+  },
+  {
+    date: 'May 2019 - Sept 2019',
+    location: 'Route Rabbit',
+    title: 'Software Engineer',
+    content: (
+      <div>
+        <ul>- Implemented Chatbot for an educational website using React, Node.</ul>
+        <ul>- Working on CodeZinger platform to solve problems in C++, Java, C#, Python.</ul>
+        <ul>- Development of Progressive Web Application (PWA) using ReactJS Redux and ES6.</ul>
+        <ul>- Dockerized test cases in the UNIX environment with Shell scripting and Dockerfile</ul>
+        <ul>- Created a test framework for a project using Selenium, unit testing, and pytest</ul>
+      </div>
     ),
   },
 ];
@@ -313,20 +345,20 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Shyam Gupta \nTechnical Leader \nSTMicroelectronics',
+      text: 'Ketan is a highly motivated and multiskilled individual. Being able to think quickly and come up with a logical solution is his strong suit. He is very much capable of delivering a presentation and explain his ideas.',
+      image: 'https://media.licdn.com/dms/image/D4D03AQHV6sKfCoF2-w/profile-displayphoto-shrink_800_800/0/1693242654376?e=1704326400&v=beta&t=3BHdQrsWav6jmbHLjmSfsO7PtrRkBwCDql8adGH6R64',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Kaustubh Mhatre Pre-Silicon Verification Engineer at Intel Corporation',
+      text: 'Ketan was my project partner. He has excellent leadership and team management skills. He actively participated in any discussion regarding project and always had a solution to any problem faced in project. He is really a go-to-guy. He also has amazing presentation skills',
+      image: 'https://media.licdn.com/dms/image/C4E03AQE_1brrpU3O1A/profile-displayphoto-shrink_800_800/0/1578933949285?e=1704326400&v=beta&t=IKNfRZIj-bolcJZ2BqaW94rdKs1Xe5ZxAFeAYO1Pq3s',
     },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+    // {
+    //   name: 'Someone else',
+    //   text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+    //   image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    // },
   ],
 };
 
@@ -336,27 +368,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Here are some of the ways you can to reach out to me.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'ketanshukla94@gmail.com',
+      href: 'mailto:ketanshukla94@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Pune MH, India',
+      href: 'https://maps.app.goo.gl/HxWSk8V87d8J4zQH7',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@ketanshukla9',
+      href: 'https://www.instagram.com/ketanshukla9/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ketan-shukla',
+      href: 'https://github.com/ketan-shukla',
     },
   ],
 };
@@ -365,9 +397,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ketan-shukla'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://steamcommunity.com/id/mastermindo_0/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/ketan-shukla-/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/ketanshukla9/'},
+  {label: 'Leetcode', Icon: LeetcodeIcon, href: 'https://leetcode.com/Ketan-Shukla/'},
 ];

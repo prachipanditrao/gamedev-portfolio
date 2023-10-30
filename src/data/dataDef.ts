@@ -1,7 +1,7 @@
-import {StaticImageData} from 'next/image';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
+import {StaticImageData} from 'next/image';
 
 export interface HomepageMeta {
   title: string;
@@ -123,8 +123,9 @@ export const ContactType = {
   Github: 'Github',
   LinkedIn: 'LinkedIn',
   Facebook: 'Facebook',
-  Twitter: 'Twitter',
+  // Twitter: 'Twitter',
   Instagram: 'Instagram',
+  Leetcode: 'Leetcode'
 } as const;
 
 export type ContactType = (typeof ContactType)[keyof typeof ContactType];

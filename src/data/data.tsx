@@ -1,16 +1,4 @@
 import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  PortfolioItem,
-  SkillGroup,
-  Social,
-  TestimonialSection,
-  TimelineItem,
-} from './dataDef';
-import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
@@ -27,19 +15,31 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
-import porfolioImage10 from '../images/portfolio/crypto-app.png';
-import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
-import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
-import porfolioImage3 from '../images/portfolio/Wordle.png';
-import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
-import porfolioImage5 from '../images/portfolio/QuizMaster.png';
-import porfolioImage6 from '../images/portfolio/JungleSlots.png';
 import porfolioImage7 from '../images/portfolio/3JS-demo.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage10 from '../images/portfolio/crypto-app.png';
+import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
+import porfolioImage6 from '../images/portfolio/JungleSlots.png';
+import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
 import porfolioImage9 from '../images/portfolio/NinjaAdventure.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage5 from '../images/portfolio/QuizMaster.png';
+import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
+import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
+import porfolioImage3 from '../images/portfolio/Wordle.png';
 import profilepic from '../images/profilepicture.png';
 import testimonialImage from '../images/testimonial.webp';
+import {
+  About,
+  ContactSection,
+  ContactType,
+  Hero,
+  HomepageMeta,
+  PortfolioItem,
+  SkillGroup,
+  Social,
+  TestimonialSection,
+  TimelineItem,
+} from './dataDef';
 
 /**
  * Page meta data

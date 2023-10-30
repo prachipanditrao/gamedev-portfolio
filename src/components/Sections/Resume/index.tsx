@@ -1,8 +1,8 @@
 import {FC, memo} from 'react';
-import {SectionId, education, experience, skills} from '../../../data/data';
 
-import ResumeSection from './ResumeSection';
+import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
+import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
 

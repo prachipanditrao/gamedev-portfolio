@@ -1,16 +1,16 @@
-import {ContactType, ContactValue} from '../../../data/dataDef';
 import {DevicePhoneMobileIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/outline';
+import classNames from 'classnames';
 import {FC, memo} from 'react';
-import {SectionId, contact} from '../../../data/data';
 
-import ContactForm from './ContactForm';
+import {contact,SectionId} from '../../../data/data';
+import {ContactType, ContactValue} from '../../../data/dataDef';
 import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
 import InstagramIcon from '../../Icon/InstagramIcon';
 import LeetcodeIcon from '../../Icon/LeetcodeIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import Section from '../../Layout/Section';
-import classNames from 'classnames';
+import ContactForm from './ContactForm';
 
 const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Email]: {Icon: EnvelopeIcon, srLabel: 'Email'},

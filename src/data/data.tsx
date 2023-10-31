@@ -20,8 +20,8 @@ import porfolioImage10 from '../images/portfolio/crypto-app.png';
 import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
 import porfolioImage6 from '../images/portfolio/JungleSlots.png';
 import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
+import porfolioImage8 from '../images/portfolio/ninja-survival.jpg';
 import porfolioImage9 from '../images/portfolio/NinjaAdventure.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage5 from '../images/portfolio/QuizMaster.png';
 import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
 import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
@@ -87,7 +87,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '../assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -105,11 +105,18 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a passionate Software Development Engineer with a strong background in Unity, Cocos game engine, C++ and TypeScript. 
-  My experience includes leading client-side development for games using Unity, collaborating with cross-functional teams, and championing Agile/Scrum practices. 
-  With a focus on creating highly performant web applications, I excel in JavaScript, React.js, Redux, and Redux Saga as well.
-  My commitment to testable and maintainable code, along with a keen eye for detail, ensures top-quality software. 
-  I've also contributed to open source front-end projects and am eager to continue solving complex problems and driving innovation in Unity game development.`,
+  description: 
+  (<>
+  {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg"> */}
+  I'm a passionate Software Development Engineer with a strong background in <strong className="text-stone-100"> Unity, Cocos game engine, C++ and TypeScript</strong>.
+  My experience includes leading client-side development for games using Unity, collaborating with cross-functional teams, and championing Agile/Scrum practices.
+  {/* </p> */}
+  {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg"> */}
+  With a focus on creating highly performant web applications, I excel in <strong className="text-stone-100">JavaScript, React.js, Redux, and Redux Saga</strong> as well.
+  My commitment to testable and maintainable code, along with a keen eye for detail, ensures top-quality software
+  {/* </p> */}
+</>),  
+
   aboutItems: [
     {label: 'Location', text: 'Pune, MH', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -250,9 +257,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage7,
   },
   {
-    title: 'Other Projects',
-    description: 'can check my other projects over here!',
-    url: 'https://github.com/ketan-shukla',
+    title: 'Ninja Survival',
+    description: 'survivo.io clone game',
+    url: 'https://drive.google.com/drive/folders/1c0XIxf89i5NndOSWOANiXCg-uuPa58GZ',
     image: porfolioImage8,
   },
   {

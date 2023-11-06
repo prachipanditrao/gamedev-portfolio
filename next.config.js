@@ -13,6 +13,11 @@ const nextConfig = {
       rule.include = undefined;
     });
 
+    config.module.rules.push({
+      test: /\.pdf$/i,
+      type: 'asset/source'
+  })
+
     return config;
   },
   compress: true,

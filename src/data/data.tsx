@@ -1,34 +1,4 @@
 import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
-
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage7 from '../images/portfolio/3JS-demo.png';
-import porfolioImage10 from '../images/portfolio/crypto-app.png';
-import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
-import porfolioImage6 from '../images/portfolio/JungleSlots.png';
-import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
-import porfolioImage8 from '../images/portfolio/ninja-survival.jpg';
-import porfolioImage9 from '../images/portfolio/NinjaAdventure.png';
-import porfolioImage5 from '../images/portfolio/QuizMaster.png';
-import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
-import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
-import porfolioImage3 from '../images/portfolio/Wordle.png';
-import profilepic from '../images/profilepicture.png';
-import testimonialImage from '../images/testimonial.webp';
-import {
   About,
   ContactSection,
   ContactType,
@@ -40,6 +10,38 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import {
+  AcademicCapIcon,
+  ArrowDownTrayIcon,
+  BuildingOffice2Icon,
+  CalendarIcon,
+  FlagIcon,
+  MapIcon,
+  SparklesIcon,
+} from '@heroicons/react/24/outline';
+
+import ExamplePdf from '../resume.pdf';
+import GithubIcon from '../components/Icon/GithubIcon';
+import InstagramIcon from '../components/Icon/InstagramIcon';
+import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroImage from '../images/header-background.webp';
+import porfolioImage1 from '../images/portfolio/ludo-all-star-banner.jpg';
+import porfolioImage10 from '../images/portfolio/crypto-app.png';
+import porfolioImage11 from '../images/portfolio/snow-ski-surfing.jpg';
+import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';
+import porfolioImage3 from '../images/portfolio/Wordle.png';
+import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
+import porfolioImage5 from '../images/portfolio/QuizMaster.png';
+import porfolioImage6 from '../images/portfolio/JungleSlots.png';
+import porfolioImage7 from '../images/portfolio/3JS-demo.png';
+import porfolioImage8 from '../images/portfolio/ninja-survival.jpg';
+import porfolioImage9 from '../images/portfolio/NinjaAdventure.png';
+import profilepic from '../images/profilepicture.png';
+import resume from '../assets/resume.pdf';
+import testimonialImage from '../images/testimonial.webp';
 
 /**
  * Page meta data
@@ -87,10 +89,11 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '../assets/resume.pdf',
+      href: '../resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
+      target:"_self"
     },
     {
       href: `#${SectionId.Contact}`,
@@ -332,7 +335,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'May 2019 - Sept 2019',
     location: 'Route Rabbit',
-    title: 'Software Engineer',
+    title: 'Trainee Engineer',
     content: (
       <div>
         <ul>- Implemented Chatbot for an educational website using React, Node.</ul>

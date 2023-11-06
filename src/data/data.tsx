@@ -8,7 +8,6 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import resume from '../assets/resume.pdf';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
@@ -29,7 +28,6 @@ import porfolioImage4 from '../images/portfolio/spotmatch.jpg';
 import porfolioImage3 from '../images/portfolio/Wordle.png';
 import profilepic from '../images/profilepicture.png';
 import testimonialImage from '../images/testimonial.webp';
-import ExamplePdf from '../resume.pdf';
 import {
   About,
   ContactSection,

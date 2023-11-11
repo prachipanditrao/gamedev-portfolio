@@ -14,7 +14,7 @@ import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/lake-4936249_1920.jpg'
 import porfolioImage7 from '../images/portfolio/3JS-demo.png';
 import porfolioImage10 from '../images/portfolio/crypto-app.png';
 import porfolioImage2 from '../images/portfolio/four-word-splashscreen.webp';

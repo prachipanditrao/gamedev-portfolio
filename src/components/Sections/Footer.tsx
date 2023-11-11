@@ -19,14 +19,13 @@ const Footer: FC = memo(() => (
       </div>
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://reactresume.com">
+        href="https://codeinterstellar.com">
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span>
-          Provided by <span className="text-white">React</span>
-          <span className="italic text-yellow">Resume</span>
+          Created by <span className="text-white">Ketan</span>
+          <span className="italic text-yellow">Shukla</span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright 2022 Tim Baker</span>
     </div>
   </div>
 ));

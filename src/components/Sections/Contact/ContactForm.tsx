@@ -44,7 +44,8 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form action="https://api.web3forms.com/submit" className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" >
+      <input name="access_key" type="hidden"  value="905d4b8f-32d0-4879-b7d2-c2dc9c8db1de"></input>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
@@ -70,7 +71,20 @@ const ContactForm: FC = memo(() => {
         type="submit">
         Send Message
       </button>
+      {/* <input id="" name="botcheck" style={{display: 'none'}} type="checkbox"></input> */}
     </form>
+//     <form action="https://api.web3forms.com/submit" method="POST">
+
+//     <input name="access_key" type="hidden" value="905d4b8f-32d0-4879-b7d2-c2dc9c8db1de"/>
+
+//     <input name="name" required type="text"/>
+//     <input name="email" required type="email"   />
+//     <textarea name="message" required></textarea>
+//     <input name="redirect" type="hidden" value="https://web3forms.com/success"/>
+
+//     <button type="submit">Submit Form</button>
+
+// </form>
   );
 });
 

@@ -22,7 +22,7 @@ const Footer: FC = memo(() => (
         href="https://codeinterstellar.com">
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span>
-          Created by <span className="text-white">Ketan</span>
+          Made with ❤ by <span className="text-white">Ketan</span>
           <span className="italic text-yellow">Shukla</span>
         </span>
       </a>

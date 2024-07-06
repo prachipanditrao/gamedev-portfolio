@@ -14,21 +14,10 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
-        <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-          {portfolioItems.map((item, index) => {
-            const {title, image} = item;
-            return (
-              <div className="pb-6" key={`${title}-${index}`}>
-                <div
-                  className={classNames(
-                    'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                  )}>
-                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
-                  <ItemOverlay item={item} />
-                </div>
-              </div>
-            );
-          })}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+          {portfolioItems.map((item, index) => (
+            <PortfolioItemCard item={item} key={`${item.title}-${index}`}/>
+          ))}
         </div>
       </div>
     </Section>
@@ -38,7 +27,29 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
+const PortfolioItemCard: FC<{item: PortfolioItem}> = memo(({item}) => {
+  const {image, title, year} = item;
+
+  return (
+    <div className="pb-6">
+      <div className="bg-white p-3 text-center">
+        <div className={classNames(
+          'relative h-65 w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+        )} style={{height: '250px', width: '100%'}}>
+          <Image alt={title} className="object-cover" layout="fill" src={image} />
+          <ItemOverlay item={item} />
+        </div>
+      
+        <div>
+          <p className="inline-block bg-gray-600 text-sm text-gray-300 px-2 py-1 rounded-md">{year}</p>
+          <p className="text-md font-bold">{title}</p>
+        </div>
+      </div>
+    </div>
+  );
+});
+
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item:{url,title,description}}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -49,6 +60,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       setMobile(true);
     }
   }, []);
+
   useDetectOutsideClick(linkRef, () => setShowOverlay(false));
 
   const handleItemClick = useCallback(
@@ -71,9 +83,10 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       href={url}
       onClick={handleItemClick}
       ref={linkRef}
-      target="_blank">
+      target="_blank"
+    >
       <div className="relative h-full w-full p-4">
-        <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
+        <div className="flex flex-col gap-y-2 h-full">
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
           <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>

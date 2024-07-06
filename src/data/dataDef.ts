@@ -82,6 +82,7 @@ export interface PortfolioItem {
   description: string;
   url: string;
   image: string | StaticImageData;
+  year: string;
 }
 
 /**

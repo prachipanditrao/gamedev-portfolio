@@ -218,36 +218,42 @@ export const portfolioItems: PortfolioItem[] = [
     `,
     url: 'https://ludo-all-star.en.uptodown.com/android',
     image: porfolioImage1,
+    year: '2019'
   },
   {
     title: 'Four Word: Word Battle',
     description: `Four Word Battle: The ultimate word challenge! Exercise your brain with this addictive fusion of word games and competition. Free to download, it offers simple, fun gameplay for all ages. Connect letters, guess hidden words, and enjoy endless word fun in a "Best of Three" format. Download now and conquer the word arena!`,
     url: 'https://apk-dl.com/amp/four-word-word-battle-game/com.fourword.wordcrush.wordgames',
     image: porfolioImage2,
+    year: '2021'
   },
   {
     title: 'Daily Word Puzzle',
     description: `Embark on a thrilling journey with DWP where you'll encounter a world of challenges, excitement, and brain-teasing puzzles. Explore a diverse range of levels, each more intriguing than the last, as you work to unravel the mysteries within. Played a important role in development of the game published by Bombay Play`,
     url: 'https://play.google.com/store/apps/details?id=com.bombayplay.DailyWord&pcampaignid=web_share',
     image: porfolioImage3,
+    year: '2022'
   },
   {
     title: 'Spot Match: Math Puzzle',
     description: `This math puzzle game challenges your logic and skills. Find the right numbers to total 10 and conquer the puzzle board. Hours of math-solving fun await, where longer chains mean higher scores. Simple to learn, yet tough to master, it's a brain-teasing, engaging number game. Test your skills and enjoy the challenge.`,
     url: 'https://play.google.com/store/apps/details?id=com.bombayplay.spot.match.math.puzzle&pcampaignid=web_share',
     image: porfolioImage4,
+    year: '2023'
   },
   {
     title: 'Quiz Master 2D',
     description: 'Simple Quiz Game Made With Unity 2021.3.17f. Demonstrates the use of Canvas, Buttons, and TextMeshPro',
     url: 'https://ketan-shukla.github.io/QuizMaster2D-Build/',
     image: porfolioImage5,
+    year: 'xxxx'
   },
   {
     title: 'Jungle Slots - Casino Games',
     description: ` Play casino slots machines with game coin rounds and free spins! Feel the excitement from the top lucky casino games while getting big jackpot win! Exciting bonus coins and progressive JACKPOTS are waiting for you!`,
     url: 'https://ketan-shukla.github.io/jungleSlotsBuild/',
     image: porfolioImage6,
+    year: 'xxxx'
   },
   {
     title: 'Virtual Village Babylon',
@@ -256,30 +262,35 @@ export const portfolioItems: PortfolioItem[] = [
     All assets in these corners load dynamically except the houses.`,
     url: 'https://ketan-shukla.github.io/VirtualVillageBabylon/',
     image: porfolioImage7,
+    year: 'xxxx'
   },
   {
     title: 'Ninja Survival',
     description: 'survivo.io clone game',
     url: 'https://drive.google.com/drive/folders/1c0XIxf89i5NndOSWOANiXCg-uuPa58GZ',
     image: porfolioImage8,
+    year: 'xxxx'
   },
   {
     title: 'Ninja Adventure',
     description: 'Play Using WASD Keys! Game Show cases 3d terrain with collectable items fully working inventory, Traps and ester eggs',
     url: 'https://ketan-shukla.github.io/Ninja-Platformer-openworld-puzzle/',
     image: porfolioImage9,
+    year: 'xxxx'
   },
   {
     title: 'CJX Crypto Wallet',
     description: 'React Native crypto wallet to ability add remove crypto currencies and tracking win/loss percentage.',
     url: 'https://github.com/Ketan-Shukla/crypto-wallet-app',
     image: porfolioImage10,
+    year: 'xxxx'
   },
   {
     title: 'Ski Slope Adventure - A 2D Mobile Skiing Game',
     description: '"Ski Slope Adventure" is an exhilarating 2D mobile game that transports players to the thrilling world of downhill skiing. With responsive controls and heart-pounding gameplay, this game offers an immersive experience for both casual gamers and skiing enthusiasts. Players must navigate a snow-covered mountain, avoid obstacles, and strive to reach the finish line while enjoying breathtaking winter landscapes.',
     url: 'https://ketan-shukla.github.io/Snow-ski-surf-build/',
     image: porfolioImage11,
+    year: 'xxxx'
   },
 ];
 
